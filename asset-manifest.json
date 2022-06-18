@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b28eee73.css",
+    "main.js": "/static/js/main.e345a447.js",
+    "static/media/weatherboltbg.jpg": "/static/media/weatherboltbg.eb1514fa47f585efe72c.jpg",
+    "index.html": "/index.html",
+    "main.b28eee73.css.map": "/static/css/main.b28eee73.css.map",
+    "main.e345a447.js.map": "/static/js/main.e345a447.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b28eee73.css",
+    "static/js/main.e345a447.js"
+  ]
+}
