@@ -23,6 +23,7 @@ const Details = () => {
     } else {
       fetchCityDetails(cityId);
     }
+    // eslint-disable-next-line
   }, [cityId]);
 
   return (

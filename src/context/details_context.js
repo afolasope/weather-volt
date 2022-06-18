@@ -65,6 +65,7 @@ export const DetailsProvider = ({ children }) => {
 
   useEffect(() => {
     getDisplayedDatafromDetails(state.displayedDetails);
+    // eslint-disable-next-line
   }, [state.displayedDetails]);
 
   useEffect(() => {

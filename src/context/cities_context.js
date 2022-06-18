@@ -69,10 +69,9 @@ export const CitiesProvider = ({ children }) => {
 
   useEffect(() => {
     if (!localTopCitiesInfo) {
-      // eslint-disable-next-line
       fetchTopCities();
-      // eslint-disable-next-line
     }
+    // eslint-disable-next-line
   }, []);
 
   useEffect(() => {
