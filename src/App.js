@@ -1,8 +1,9 @@
 import { Routes, Route } from 'react-router-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Details, Error, Home } from './pages';
-import { Header } from './components';
+import { Form, Header } from './components';
 import { useCitiesContext } from './context/cities_context';
+
 
 function App() {
   const { isLoading } = useCitiesContext();
@@ -12,6 +13,9 @@ function App() {
       <main className="wrapper">
         <header>
           <Header />
+          <div className="header-bottom">
+            <Form />
+          </div>
         </header>
         {isLoading && (
           <svg

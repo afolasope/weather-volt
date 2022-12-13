@@ -18,6 +18,8 @@ export const GET_SEARCH_ERROR = 'GET_SEARCH_ERROR';
 export const GET_SEARCH_INVALID = 'GET_SEARCH_INVALID';
 export const EMPTY_SEARCH = 'EMPTY_SEARCH';
 
+//
+
 // details page -weather report
 export const LOAD_CITIES = 'LOAD_CITIES';
 export const LOAD_FAV_CITIES = 'LOAD_FAV_CITIES';

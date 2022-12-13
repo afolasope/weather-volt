@@ -4,14 +4,17 @@ import './index.css';
 import App from './App';
 import { CitiesProvider } from './context/cities_context';
 import { DetailsProvider } from './context/details_context';
+// import { SearchFormProvider } from './context/search_context';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <CitiesProvider>
+      {/* <SearchFormProvider> */}
       <DetailsProvider>
         <App />
       </DetailsProvider>
+      {/* </SearchFormProvider> */}
     </CitiesProvider>
   </React.StrictMode>
 );

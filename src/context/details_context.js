@@ -41,15 +41,21 @@ export const DetailsProvider = ({ children }) => {
     try {
       dispatch({ type: GET_CITY_DETAIL_BEGIN });
       const data = await fetch(`${API_ENDPOINT}${param}`);
-      let res = await data.json();
-      res = {
-        ...res,
-        id: `${res.location.name}, ${res.location.country}`,
-        isFave: false,
-      };
-      loadDisplayedDetails(res);
+      const res = await data.json();
+      console.log(res);
+      if (res && res.success === false) {
+        console.log(res.error.info);
+      } else {
+        const info = {
+          ...res,
+          id: `${res.location.name}, ${res.location.country}`,
+          isFave: false,
+        };
+        loadDisplayedDetails(info);
+      }
     } catch (error) {
       dispatch({ type: GET_CITY_DETAIL_ERROR });
+      console.log(error);
     }
   };
 

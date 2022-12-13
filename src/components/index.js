@@ -8,6 +8,7 @@ import NotesReport from './NotesReport';
 import Error from './Error';
 import EditNote from './EditNote';
 import DeleteNote from './DeleteNote';
+import Form from './Form';
 
 export {
   FavCities,
@@ -20,4 +21,5 @@ export {
   Error,
   EditNote,
   DeleteNote,
+  Form,
 };
